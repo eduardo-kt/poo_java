@@ -10,15 +10,18 @@ public class App {
 
         System.out.println("Digite seu palpite: ");
         palpite = teclado.nextInt();
+        String msg;
 
         while(palpite != valorCorreto) {
-            if(palpite>valorCorreto) {
+            msg = palpite>valorCorreto?"Um pouco menos...":"Um pouco mais...";
+            /*if(palpite>valorCorreto) {
                 System.out.println("Um pouco menos...");
             
             }
             else {
                 System.out.println("Um pouco mais...");
-            }
+            }*/
+            System.out.println(msg);
             System.out.println("Digite outro palpite: ");
             palpite = teclado.nextInt();
             
